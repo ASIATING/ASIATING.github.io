@@ -1,0 +1,216 @@
+*{
+    /* border:solid 1px black; */
+    /* font-size: 24px; */
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(https://firebasestorage.googleapis.com/v0/b/fir-cyut.appspot.com/o/myFirst%2Fbanner1.png?alt=media&token=cc6528e3-d605-4602-ade3-ae86d412c120) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nav{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    border:solid 1px black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav h1{
+font-size: 2rem;
+color: #FFF;
+
+}
+.introduce{
+    position: absolute;
+    right: 5%;
+    list-style: none;
+    float:right;
+    display: flex;
+    align-items: center;
+}
+
+.introduce li{
+margin-left: 15px;
+
+}
+.introduce li a{
+    text-decoration: none;
+    color: #FFF;
+    
+    }
+.aboutMe{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 20px;
+    color: #fff;
+}
+.infoBox{
+    position: relative;
+    margin-top: 100px;
+    /* height: 800px; */
+    width: 80%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A6CFD5;
+    color: #FFF;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+    border-radius: 5px;
+
+    
+}
+.myPhoto{
+    border-radius:50% ;
+    width: 150px;
+    /* position: absolute;
+    left:0px;
+    top:-120px; */
+    display:block; 
+    margin:auto;
+    border: #FFF solid 3px;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
+}
+.infoBox h1{
+    /* border-bottom: solid 1px ; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.infoBox i{
+    font-size: 24px;
+}
+.detalInfo{
+    padding-bottom: 40px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: solid 1px ;
+
+}
+.detalInfo p{
+    margin-left: 1rem;
+}
+.tagColor{
+    display: inline-block;
+    background-color: rgb(255, 255, 255,0.3);
+    margin-left: 16px;
+    font-size: 32px;
+    font-weight: bold;
+    /* width: 150px;
+    height: 50px; */
+    /* background-color: #fff;
+    opacity: 0.3; */
+    padding-left: 0px;
+    /* padding-bottom: 40px; */
+}
+.learn{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: solid 1px ;
+    margin-top: 20px;
+}
+.learn p{
+line-height: 24px;
+margin-left: 2rem;
+    margin-right: 2rem;
+}
+.learn h1{
+    display: flex;
+    align-items: center;
+
+}
+.learn1{
+   padding: 50px;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   border-bottom: solid 1px ;
+}
+.linkBox{
+    display: flex;
+}
+
+.infoBox2{
+    background-color: #fff;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
+    height: 300px;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    text-align:center;
+    color: rgb(49, 49, 49);
+
+}
+.infoBox2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #A6CFD5;
+    opacity: 0.5;
+}
+.introBox{
+    font-size: 20px;
+    width: 50%;
+}
+.skill_chart{
+    padding: 20px;
+    font-size: 24px;
+    width: 50%;
+    height: 300px;
+    /* border: solid 1px black; */
+}
+.learn2{
+    display: flex;
+    padding: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: solid 1px ;
+ }
+ .bar{
+    border-radius: 5px;
+    overflow: hidden;
+background-color: #f2f2f1;
+width: 100%;
+height: 24px;
+margin-bottom: 20px;
+
+ }
+.bar-front{
+    background-color: #9198da;
+    height: 100%;
+    position: relative;
+
+}
+.bar-front::after{
+    position: absolute;
+    right: 2.5%;
+    content: attr(data-percent);
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+
+}
+
+@media screen and (max-width: 1200px){
+    .linkBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .learn1{
+        padding: 0px;
+
+       
+     }
+     .infoBox2 {
+        width: 80%;
+     }
+}

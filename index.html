@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
+    <script src="./jquery.js"></script>
+    <script src="./index.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,15 +17,15 @@
     <div class="header">
       <div class="nav">
         <h1>ABOUT ME</h1>
-        <ul class="introduce">
+        <ul class="introduce" >
           <li><a href="">關於我</a></li>
-          <li><a href="">SKILL</a></li>
-          <li><a href="">作品集</a></li>
+          <li><a href="#introLink">SKILL</a></li>
+          <li><a href="https://drive.google.com/drive/folders/1V860atHnfMlVDSpmbwWZrmJDrvps3z6Z?usp=sharing" target="_blank">作品集</a></li>
         </ul>
       </div>
       <div class="content">
         <div class="aboutMe">
-          <h1>丁鵬仁-ERIC</h1>
+          <h1>丁鵬仁ERIC</h1>
           <br />
           <p>
             對於程式撰寫感興趣 <br />
@@ -31,8 +33,8 @@
             嚮往可以互相成長，<br />
             以及互相學習的團隊
           </p>
-          <a href="">
-            <button>作品集</button>
+          <a href="https://drive.google.com/drive/folders/1V860atHnfMlVDSpmbwWZrmJDrvps3z6Z?usp=sharing" target="_blank">
+            <button class="Buttom1" >作品集</button>
           </a>
         </div>
       </div>
@@ -59,7 +61,7 @@
   </div>
   <div class="learn">
   <div class="tagColor">工作經歷</div>
-  <h1><img src="./img/1200px-EVA_AIR_Logo.svg.png" style="display:inline-block;height:50px" />長榮航太科技股份有限公司</h1>
+  <h1>長榮航太科技股份有限公司<img src="./img/1200px-EVA_AIR_Logo.svg.png" style="display:inline-block;height:50px" /></h1>
   <h2>飛機維修工程師</h2>
   <p>2021.01-2022.04 一年三個月</p>
   <p>1.負責飛機的電信設備功能檢查</p>
@@ -79,11 +81,11 @@
   </div>
         </div>
         <div class="learn2">
-          
-          <div class="introBox">
+          <div class="learn2-top" >
+          <div class="introBox" id="introLink">
             <div class="tagColor">FRONT-END</div>
-         <p>第一次接觸網頁前端是在在職的時候，偶然有認識的朋友有在教學幫助有興趣的朋友轉職，在課程中雖然沒有碰過HTML/CSS/JS，但是先前有寫過Matlab及Arduino等不同的程式語言，所以起初是蠻能接受的。</p>
-         <p>到今年年初打算全職做轉職的準備，就順勢地參加了勞動部的產業新尖兵，接受了更至正規及不同的授課內容、方式</p>
+         <p>第一次接觸網頁前端是在在職的時候，朋友有在教學幫助有興趣的朋友轉職，並開始熟悉HTML/CSS/JS，而透過實際的專案練習了解到api串接，進一步瞭解到同步非同步的應用。</p>
+         <p>慢慢地對前端產生興趣所以選擇全職做轉職的準備，也參加了勞動部的產業新尖兵，接受了更至正規及不同的授課內容、方式</p>
          <p>目前因為參加了朋友的專案開發練習，接觸到了Webpack/Vue.js框架等等，希望能更精通精進自己的程式能力擴展自己的技能樹。</p>
         </div>
         <div class="skill_chart">
@@ -104,7 +106,25 @@
           <div class="bar-front"  data-percent="30%" style="width: 30%;"></div>
         </div>
       </div>
-            </div>
+    </div>
+      <ul class="skillList">
+        <li class="skillList-item">FRONT-END</li>
+        <li class="skillList-item">BACK-END</li>
+        <li class="skillList-item">OTHER</li>
+      </ul>
+            </div> 
+  </div>
+  <div class="footer">
+    <div class="footerBox">
+      <i class="fa fa-facebook-official" aria-hidden="true" style="color: #D8D297; font-size: 36px;"></i>&emsp;丁鵬仁
+        </div>
+        <div class="footerBox">
+          <i class="fa fa-phone-square" aria-hidden="true" style="color: #D8D297; font-size: 36px;"></i>&emsp;0937082601
+        </div>  
+        <div class="footerBox">
+          <i class="fa fa-envelope" aria-hidden="true" style="color: #D8D297; font-size: 36px;"></i>&emsp;h124702780@gmail.com
+        </div>     
+        <p class="footer-copy">Copyright©2022 丁鵬仁ERIC 版權所有</p>
   </div>
   </body>
 </html>

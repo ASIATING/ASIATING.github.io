@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+.carousel-caption{
+ background-color: rgba(219, 219, 219, 0.3);
+}
+.bg-cover {
+    background-position: center center;
+    background-size: cover;
+}
+ul {
+    list-style: none;
+}

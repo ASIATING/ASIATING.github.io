@@ -1,0 +1,358 @@
+*{
+    /* border:solid 1px black; */
+    /* font-size: 24px; */
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(https://firebasestorage.googleapis.com/v0/b/fir-cyut.appspot.com/o/myFirst%2Fbanner1.png?alt=media&token=cc6528e3-d605-4602-ade3-ae86d412c120) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nav{
+    position: relative;
+    background-color: #8C7B73;
+    /* border:solid 1px black; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav h1{
+font-size: 2rem;
+color: rgb(219, 219, 219);
+
+}
+.introduce{
+    position: absolute;
+    right: 5%;
+    list-style: none;
+    float:right;
+    display: flex;
+    align-items: center;
+}
+
+.introduce li{
+margin-left: 15px;
+
+}
+.introduce li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s; 
+}
+.introduce li:hover::after {
+    width: 100%;
+
+    }
+    .introduce li a:hover {
+        color: white;
+    
+        }
+.introduce li a{
+    text-decoration: none;
+    color:rgb(219, 219, 219);
+    
+    }
+.aboutMe{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 20px;
+    color: #fff;
+}
+.Buttom1{
+    font-size: 18px;
+    padding: 0px 10px;
+    border: none;
+    background-color: #8C7B73;
+    color: #fff
+}
+button {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+}
+
+button {
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background: #8C7B73;
+  vertical-align: middle;
+  display: flex;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+button:before, button:after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+}
+
+.btn1 {
+  justify-content: center;
+}
+.btn1:before {
+  content: attr(data-content);
+  width: 100%;
+  top: 50%;
+  color: transparent;
+}
+.btn1:hover {
+  color: transparent;
+}
+.btn1:hover:before {
+  top: 0;
+  color: #edde5d;
+}
+
+.infoBox{
+    position: relative;
+    margin-top: 100px;
+    /* height: 800px; */
+    width: 80%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #AFCFDA;
+    color: #FFF;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+    border-radius: 5px;
+
+    
+}
+.myPhoto{
+    border-radius:50% ;
+    width: 150px;
+    /* position: absolute;
+    left:0px;
+    top:-120px; */
+    display:block; 
+    margin:auto;
+    border: #FFF solid 3px;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
+}
+.infoBox h1{
+    /* border-bottom: solid 1px ; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.infoBox i{
+    font-size: 24px;
+}
+.detalInfo{
+    padding-bottom: 40px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: solid 1px ;
+
+}
+.detalInfo p{
+    margin-left: 1rem;
+}
+.tagColor{
+    display: inline-block;
+    background-color: rgb(255, 255, 255,0.3);
+    margin-left: 16px;
+    font-size: 32px;
+    font-weight: bold;
+    /* width: 150px;
+    height: 50px; */
+    /* background-color: #fff;
+    opacity: 0.3; */
+    padding-left: 0px;
+    /* padding-bottom: 40px; */
+}
+.learn{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: solid 1px ;
+    margin-top: 20px;
+}
+.learn p{
+line-height: 24px;
+margin-left: 2rem;
+    margin-right: 2rem;
+}
+.learn h1{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+}
+.learn h2{
+    font-size: 24px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.learn1{
+   padding: 50px;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   border-bottom: solid 1px ;
+}
+.linkBox{
+    display: flex;
+}
+
+.infoBox2{
+    background-color: #fff;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
+    height: 300px;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    text-align:center;
+    color: rgb(49, 49, 49);
+
+}
+.infoBox2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #AFCFDA;
+    opacity: 0.5;
+}
+.introBox{
+    font-size: 20px;
+    width: 100%;
+}
+.skill_chart{
+    padding: 20px;
+    font-size: 24px;
+    width: 100%;
+    /* border: solid 1px black; */
+}
+.learn2{
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+    padding: 80px;
+    height: 500px;
+    /* padding-bottom: 20px;。 */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: solid 1px ;
+ }
+ .learn2-top{
+    display: flex;
+ }
+ .bar{
+    border-radius: 5px;
+    overflow: hidden;
+background-color: #f2f2f1;
+width: 100%;
+height: 24px;
+margin-bottom: 20px;
+
+ }
+.bar-front{
+    background-color: #9198da;
+    height: 100%;
+    position: relative;
+    width: 0%;
+    transition: width 200ms linear;
+
+}
+.bar-front::after{
+    position: absolute;
+    right: 2.5%;
+    content: attr(data-percent);
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+
+}
+
+.skillList{
+    position: absolute;
+    bottom:20px;
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    padding-left: 0px;
+    left: 50%;
+    transform: translateX(-50%) 
+}
+.skillList-item{
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 18px;
+    line-height: 18px;
+    padding:5px 10px;
+    background-color: #8C7B73;
+    cursor: pointer;
+    text-align:center;
+    width: 100px;
+    transition: 0.5s;
+}
+
+.skillList-item:hover{
+
+    background-color: #D8D297;
+}
+
+.footer{
+/* height: 10vh; */
+background-color: #8C7B73;
+padding: 20px 20%;
+
+}
+.footerBox{
+    align-items: center;
+    margin: 10px;
+    color: #D8D297;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+.footerBox img{
+    height: 40px;
+}
+.footer-copy{
+ text-align: center;
+ opacity: 0.5;
+}
+@media screen and (max-width: 1200px){
+    .linkBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .learn1{
+        padding: 0px;
+     }
+     .infoBox2 {
+        width: 80%;
+     }
+     .learn2-top{
+        display: block;
+     }
+     .learn2{
+        height: auto;
+     }
+     .skillList-item{
+        margin: 0 10px;
+        width: auto;
+
+    }
+}

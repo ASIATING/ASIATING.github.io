@@ -1,0 +1,139 @@
+*{
+    /* border:solid 1px black; */
+    /* font-size: 24px; */
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.col-md-4 a{
+    text-decoration: none;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    position: relative;
+    background-color: #8C7B73;
+    /* border:solid 1px black; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav h1{
+font-size: 2rem;
+color: rgb(219, 219, 219);
+
+}
+.introduce{
+    position: absolute;
+    right: 5%;
+    list-style: none;
+    float:right;
+    display: flex;
+    align-items: center;
+}
+
+.introduce li{
+margin-left: 15px;
+
+}
+.introduce li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s; 
+}
+.introduce li:hover::after {
+    width: 100%;
+
+    }
+    .introduce li a:hover {
+        color: white;
+    
+        }
+.introduce li a{
+    text-decoration: none;
+    color:rgb(219, 219, 219);
+    
+    }
+
+/* contain */
+
+.BOX{
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 600px; */
+    /* height: 80vh; */
+    /* background-color: rgb(146, 146, 146); */
+}
+
+.colorBox{
+
+    height: 300px;
+    width: 300PX;
+    background-color: #9198da;
+    margin:5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    border: #D8D297 solid 10px;
+    line-height: 300px;
+    overflow: hidden;
+    color: aliceblue;
+    cursor: pointer;
+}
+.show{
+    font-size: 40px;
+    text-align:center;
+    transition: 0.5s; 
+}
+
+
+.colorBox:hover{
+
+    background-color: #D8D297;
+    border: #9198da solid 10px;
+}
+.colorBox .show:hover{
+    padding-top: 300px;
+}
+.colorBox .hover-show{
+    margin-top: -600px;
+}
+
+
+
+
+
+
+
+
+
+    /* footer */
+.footer{
+    /* height: 10vh; */
+    background-color: #8C7B73;
+    padding: 20px 20%;
+    
+    }
+    .footerBox{
+        align-items: center;
+        margin: 10px;
+        color: #D8D297;
+        font-size: 20px;
+        font-weight: bold;
+    
+    
+    }
+    .footerBox img{
+        height: 40px;
+    }
+    .footer-copy{
+     text-align: center;
+     opacity: 0.5;
+    }

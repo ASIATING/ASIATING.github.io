@@ -76,8 +76,52 @@ margin-left: 15px;
     padding: 0px 10px;
     border: none;
     background-color: #8C7B73;
-    color: #fff;
+    color: #fff
 }
+button {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+}
+
+button {
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background: #8C7B73;
+  vertical-align: middle;
+  display: flex;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+button:before, button:after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+}
+
+.btn1 {
+  justify-content: center;
+}
+.btn1:before {
+  content: attr(data-content);
+  width: 100%;
+  top: 50%;
+  color: transparent;
+}
+.btn1:hover {
+  color: transparent;
+}
+.btn1:hover:before {
+  top: 0;
+  color: #edde5d;
+}
+
 .infoBox{
     position: relative;
     margin-top: 100px;

@@ -53,8 +53,6 @@ select.city {
   height: 50px;
   margin: 20px 0px;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -62,7 +60,7 @@ select.city {
 .selectbox::after {
   width: 50px;
   height: 50px;
-  content: '▼';
+  content: "▼";
   position: absolute;
   top: 0px;
   right: 0px;
@@ -70,7 +68,7 @@ select.city {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 0px 10px 10px 0px;
   pointer-events: none;
-  transition: .25s all ease;
+  transition: 0.25s all ease;
   text-align: center;
   line-height: 40px;
 }

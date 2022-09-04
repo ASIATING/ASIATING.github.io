@@ -333,6 +333,9 @@ padding: 20px 20%;
  opacity: 0.5;
 }
 @media screen and (max-width: 1200px){
+    .nav h1{
+        display: none;
+    }
     .linkBox {
         display: block;
         margin-left: auto;

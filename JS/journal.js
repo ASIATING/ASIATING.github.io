@@ -1,7 +1,8 @@
 $(document).ready(function () {
     $('#view1').click(function () {
 
-       $('.container').html(` 
+       $('#Infos').html(` 
+       <div class="container">
        <h1>桃園之旅</h1>
        <!-- 第一個景點 -->
        <hr>
@@ -41,6 +42,7 @@ $(document).ready(function () {
          <div class="col-md-5">
            <img src="./img/竹圍漁港.jfif" class="img-fluid">
          </div>
+       </div>
        </div>`)
     
     
@@ -48,7 +50,8 @@ $(document).ready(function () {
     })
     $('#view2').click(function () {
 
-        $('.container').html(` 
+        $('#Infos').html(`
+        <div class="container"> 
         <h1>台中之旅</h1>
         <!-- 第一個景點 -->
         <hr>
@@ -91,12 +94,15 @@ $(document).ready(function () {
           <div class="col-md-5">
             <img src="./img/逢甲夜市.jpg" class="img-fluid">
           </div>
-        </div>`)
+        </div>
+        </div>
+        `)
      
      })
      $('#view3').click(function () {
 
-        $('.container').html(` 
+        $('#Infos').html(` 
+        <div class="container">
         <h1>日本之旅</h1>
         <!-- 第一個景點 -->
         <hr>
@@ -138,13 +144,16 @@ $(document).ready(function () {
             <img src="./img/狸小路.jpg" class="img-fluid">
           </div>
         </div>
-      </div>`)
+      </div>
+      </div>
+      `)
     
      
      })
      $('#view4').click(function () {
 
-        $('.container').html(` 
+        $('#Infos').html(` 
+        <div class="container">
         <h1>美國之旅</h1>
         <!-- 第一個景點 -->
         <hr>
@@ -187,12 +196,14 @@ $(document).ready(function () {
           <div class="col-md-5">
             <img src="./img/大峽谷.jpg" class="img-fluid">
           </div>
-        </div>`)
+        </div>
+        </div>
+        `)
 
      })
      $('#home').click(function () {
 
-        $('.container').html(` 
+        $('#Infos').html(` 
         <video  width="100%" autoplay muted loop>
   <source src="https://travel.tycg.gov.tw/content/films/attractions-films/712/ba3960de0ab34161b38a93edfbf328b2.mp4"  type="video/mp4">
 </video>`)      

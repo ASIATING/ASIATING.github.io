@@ -164,7 +164,9 @@ button:before, button:after {
 
 }
 .detalInfo p{
-    margin-left: 1rem;
+    margin-left: 2rem;
+    line-height: 32px;
+    /* margin-bottom: 0px; */
 }
 .tagColor{
     display: inline-block;
@@ -186,7 +188,7 @@ button:before, button:after {
     margin-top: 20px;
 }
 .learn p{
-line-height: 24px;
+line-height: 32px;
 margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -202,14 +204,20 @@ margin-left: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
+.learn h3{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 .learn1{
-   padding: 50px;
+   /* padding: 50px; */
+   margin-top: 20px;
    margin-left: 1rem;
    margin-right: 1rem;
    border-bottom: solid 1px ;
 }
 .linkBox{
     display: flex;
+    margin: 50px;
 }
 
 .infoBox2{
@@ -331,6 +339,7 @@ padding: 20px 20%;
 .footer-copy{
  text-align: center;
  opacity: 0.5;
+ color: #554843;
 }
 @media screen and (max-width: 1200px){
     .nav h1{

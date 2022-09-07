@@ -73,7 +73,7 @@ margin-left: 15px;
 }
 
 .colorBox{
-
+    position: relative;
     height: 300px;
     width: 300PX;
     background-color: #9198da;
@@ -86,25 +86,44 @@ margin-left: 15px;
     overflow: hidden;
     color: aliceblue;
     cursor: pointer;
+    transition: 0.5s;
+    /* z-index: -1; */
 }
 .show{
-    font-size: 40px;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%) ;
+    font-size: 30px;
     text-align:center;
     transition: 0.5s; 
 }
-
-
-.colorBox:hover{
-
-    background-color: #D8D297;
-    border: #9198da solid 10px;
+.colorBox img{
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s; 
 }
-.colorBox .show:hover{
+.colorBox:hover img{
+    opacity: 1;
+}
+.colorBox:hover .show{
+    opacity: 0.5;
+}
+/* .colorBox:hover{
+    opacity: 0.5;
+    background-color: transparent;
+    color: white;
+    border: #9198da solid 10px;
+} */
+/* .colorBox .show:hover{
     padding-top: 300px;
 }
 .colorBox .hover-show{
     margin-top: -600px;
-}
+} */
 
 .underBox{
 

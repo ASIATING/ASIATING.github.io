@@ -140,6 +140,7 @@ button:before, button:after {
 .myPhoto{
     border-radius:50% ;
     width: 150px;
+    background-color: #cde3eb;
     /* position: absolute;
     left:0px;
     top:-120px; */

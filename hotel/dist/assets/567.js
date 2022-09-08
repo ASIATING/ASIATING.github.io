@@ -1,0 +1,1 @@
+var a=5;function foo(){console.log("in function , a:"+a)}console.log(a),console.log(b);

@@ -1,0 +1,119 @@
+.container p{
+    font-size: 2rem;
+}
+.topArea{
+    height: 130px;
+    line-height: 130px;
+}
+.selectBox{
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    background-color: #1a1311;
+    background-image: url(../img/ring.svg);
+    /* height: 260px; */
+}
+.selectTitle{
+    color:lavender;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 30px;
+}
+.selectTitle-border{
+    height: 4px;
+    width: 210px;
+    background-color: #a70719;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.formControl{
+    width: 100%;
+    height: 65px;
+    margin-top: 20px 5px;
+    font-size: 24px;
+}
+.searchButtom{
+    background-color: #a70719;
+    color: #fff; 
+    height: 65px;
+    margin: 0px;
+
+
+}
+.col-md-4{
+    padding: 20px;
+}
+#storeInfos{
+    font-family: Simsun;
+}
+/* 商店內容 */
+.infoCard{
+    padding: 10px;
+    width: 100%;
+    height: 460px;
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+}
+.infoCard p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.hover-img{
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   transition: 1s;
+   overflow: hidden;
+   /* width: 100%; */
+   margin-bottom: 30px;
+}
+.scaleImgDiv {
+    /* margin:9px 0; */
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+  }
+.infoCard:hover .hover-img{
+    transform: scale(1.1);
+}
+.reserv{
+    width: 50%;
+    background:#a70719;
+}
+.alertBox{
+ /* position: absolute;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 200px;
+ width: 100vh;
+ height: 100vh;
+ background-color: red; */
+ background-color: #fefefe;
+ /* background-image: url('../img/qrbox.jpg'); */
+ background-image: linear-gradient(to bottom,rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.7) 100%),url('../img/qrbox.jpg');
+ background-size: cover;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.qrImg{
+    background-image: url('../img/qr.svg');
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    margin: 5% auto 15% auto;
+
+}
+.appButton{
+    /* display: flex;
+    margin: 0px auto; */
+}

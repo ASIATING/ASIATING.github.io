@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todoList.css">
+</head>
+<body>
+    <div class="container">
+    <h3>TODOLIST</h3>
+    
+ <div class="toDo">
+    <input id="inputVal" type="text" required placeholder="輸入待辦事項" > 
+    <button id="inputBtn">+</button>
+ </div>
+ <div class="todoList">
+    <div class="items">
+        <div class="itemBox">
+        <input id="user" class="delItem" type="checkbox">
+        <label for="user">學習 VUE </label>
+    </div>
+        <button class="delBtn" >X</button>
+    </div>
+    <div class="items">
+        <div class="itemBox">
+        <input class="delItem" type="checkbox" id="photoshop">
+        <label for="photoshop">學習 photoshop</label>
+    </div>
+        <button  class="delBtn">X</button>
+    </div>
+    <div class="items">
+        <div class="itemBox">
+        <input id="javascript"  class="delItem" type="checkbox">
+        <label for="javascript">
+        學習 javascript
+    </label>
+    </div>
+        <button class="delBtn">X</button>
+    </div>
+    
+</div>
+<button id="test" >刪除勾選的內容</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./todoList.js"></script>
+</body>
+</html>

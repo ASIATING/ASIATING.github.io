@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="./jquery.js"></script>
+  <script src="./js/storeInfos.js"></script>
+  <script src="./js/index.js"> </script>
+  <script src="./js/moresStore.js"> </script>
+
+  <link rel="stylesheet" href="./css/index1.css">
+  <link rel="stylesheet" href="./css/index2.css">
+  <link rel="stylesheet" href="./css/moresStore.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>SUSHI</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid bg-dark">
+      <a class="navbar-brand fw-bold" href="./index1.html">超神田壽司</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index1.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">店鋪簡介</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              店鋪介紹
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./index2 copy.html">品牌理念</a></li>
+              <li><a class="dropdown-item"  href="#">全台店鋪一覽</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              商品介紹
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./login.html">登入購買</a></li>
+              <li><a class="dropdown-item" onclick="login()" href="#">登入購買Ver2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="">
+      <div class="container loginCard">
+        <label for="username"><b>使用者名稱</b></label><br>
+        <input type="text" placeholder="輸入使用者名稱" name="username" required> <br>
+        <label for="userpsw"><b>使用者密碼</b></label><br>
+        <input type="text" placeholder="輸入使用者密碼" name="userosw" required><br>
+        <div class="buttomBox">
+          <button type="submit">Login</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button> <br>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <!-- <img src="./img/store01.jfif" alt=""> -->
+      </div>
+
+    </form>
+
+  </div>
+  <div id="id02" class="modal  ">
+    <div class="alertBox animate">
+      <div class="qrImg"></div>
+      <p>請掃描上方QRCODE用手機APP網路定位</p>
+      <div class="appButton">
+        <img src="./img/app01.png" alt="">
+        <img src="./img/app02.png" alt="">
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+    <!-- style="margin-top: 121px;" -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item  bg-cover active" style="height: 360px;background-image: url(img/sushi03\ \(1\).jpg);">
+
+        <!-- <div class="carousel-caption d-none d-md-block"> -->
+        <div class="carousel-caption d-none d-md-block px-3">
+          <h5 style="font-weight: bold;">大海的美味</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="carousel-item bg-cover" style="height: 360px;background-image: url(img/sushi03\ \(2\).jpg);">
+
+        <div class="carousel-caption d-none d-md-block px-3">
+          <h5>每天新鮮供應</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item bg-cover " style="height: 360px;background-image: url(img/sushi03\ \(3\).jpg);">
+        <div class="carousel-caption d-none d-md-block px-3">
+          <h5>服務與品質的保證</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- 內文 -->
+  <div class="container topArea">
+    <p>全台店鋪一覽</p>
+  </div>
+  <div class="container-fluid selectBox">
+    <div class="container">
+        <div class="selectTitle text-center">
+          
+          <img src="./img/location.svg" alt="">
+          全台灣店鋪搜尋
+          <div class="selectTitle-border"></div>
+          <div class="d-flex select">
+            <div class="row" style="width: 100%;">
+            <div class="col-md-4">
+              <select class="formControl" name="" id="area1">
+                <option value="0">區域選擇</option>
+                <option value="1">北部</option>
+                <option value="2">中部</option>
+                <option value="3">南部</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="formControl" name="" id="area2">
+                <option value="0">區域選擇</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <button id="searchButtom" class="searchButtom">搜尋</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 店鋪顯示區域 -->
+  <div class="container">
+    <div class="row" id="storeInfos">
+
+      <div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 店鋪顯示區域  END-->
+  <div class="footer">
+    <div class="footerBox">
+      <p class="footer-copy">Copyright©2022 丁鵬仁ERIC 版權所有</p>
+    </div>
+
+</body>
+
+</html>

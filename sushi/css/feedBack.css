@@ -1,0 +1,25 @@
+*{
+    /* box-sizing: border-box; */
+}
+.labelText{
+    line-height: 1.5;
+}
+input[type=text]{
+    margin: 0;
+}
+.inputBox{
+    height: 30px;
+
+}
+.formBox{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px;
+}
+.formBox .row{
+    margin-bottom: 30px;
+
+}
+textarea{
+    height: 230px !important;
+}

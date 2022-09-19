@@ -26,6 +26,41 @@ font-size: 2rem;
 color: rgb(219, 219, 219);
 
 }
+.myWork{
+    position: relative;
+}
+.dropDown{
+    position: absolute;
+    top:25px;
+    display: block;
+    padding: 0px;
+    width: 140px;
+    list-style: none;
+    background-color: #8C7B73;
+    color:rgb(219, 219, 219) ;
+    z-index: 999;
+    display: none;;
+
+}
+.dropDown li{
+    padding:10px 20px;
+}
+.dropDown li a{
+    display: block;
+text-align: center;
+}
+
+.dropDown>li:hover{
+    background: #382a24;
+}
+.myWork:hover .dropDown{
+    display: block;
+}
+.myAccount:hover .dropdown{
+    animation: myAccount 1s ease 0s 1 normal forwards;
+    display:block;
+}
+
 .introduce{
     position: absolute;
     right: 5%;
@@ -38,6 +73,9 @@ color: rgb(219, 219, 219);
 .introduce li{
 margin-left: 15px;
 
+}
+.dropDown li{
+    margin:0px;
 }
 .introduce li::after {
     content: '';

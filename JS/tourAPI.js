@@ -12,7 +12,6 @@
     //   });
 
 $(document).ready(function() {
-
     let showSearch = $('#searchpage');
     let showNoResult = $('#noresult');
  
@@ -64,6 +63,7 @@ $(document).ready(function() {
             },
 
             error: function() {
+                console.log("失敗")
             }
         })
     });

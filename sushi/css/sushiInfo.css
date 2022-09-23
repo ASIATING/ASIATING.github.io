@@ -1,0 +1,161 @@
+.typeList{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content:center
+}
+.countCart{
+    display: block;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #90a7d1;
+    color: #ffffff;
+    border-radius: 50%;
+}
+/* 購物車清單 開始 */
+
+.shopCart{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.shopCartBox{
+    display: block;
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    /* padding-top: 60px; */
+}
+.shopCartBox i{
+    margin: 30px 50px;
+}
+.shopCartBox img{
+    width: 90%;
+}
+.delBtn{
+    cursor: pointer;
+}
+#totalPrice{
+    display: flex;
+    justify-content: end;
+}
+.checkout{
+    width:100px ;   
+    padding: 10px 15px;
+    margin: 0px auto;
+    background-color: #28a745;
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#closeCart{
+    display: inline-block;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #a70719;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+.innerBox{
+    height: 100%;
+    border: 1px solid #a70719;
+}
+.col-1{
+    display: flex ;
+     align-items: center ;
+}
+.butItem{
+    transform: translateY(30%);
+}
+input[type="number"] {
+    width: 3em;
+}
+.animateCart {
+
+    animation: animateCart 0.6s
+  }
+  @keyframes animateCart {
+    0% {
+		transform: translateX(200px);
+        opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0px);
+        opacity: 1;
+	}
+  }
+.cart-content{
+    position: absolute;
+    right: 0px;
+    background-color: #fefefe;
+    /* margin: 5% auto 15% auto; */
+    border: 1px solid #888;
+    width: 600px;
+    height: 100%;
+    /* display: none; */
+}
+/* 購物車清單 END */
+.item{
+    height: 100px;
+    padding: 5px 40px;
+    /* text-decoration: none; */
+    font-size: 1.5rem;
+    position: relative;
+}
+.item div{
+    /* margin: 0px auto; */
+    text-align:center;
+    /* margin-bottom: 10px; */
+}
+.item  .itemType{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #a70719;
+    padding: 0 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    /* position: absolute; */
+
+}
+.imgBox{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sushiInfo {
+    /* border: solid 1px black; */
+    height: 300px;
+    text-align: center;
+    /* border-bottom: 2px solid #a70719; */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.buyBtn{
+    width: auto;
+    background-color: #a70719;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.moreSushi{margin-top: 20px;}
+
+.moreSushi img{
+    width: 100%;
+    background-size: cover;
+    /* background-position: center; */
+
+}

@@ -18,11 +18,9 @@ window.onclick = function(event) {
         // console.log(modal2);
         
     }
+     // ShopCart.style.display = "none"; 跟 fadeOut 相同意思概念 都是display block&none
     if (event.target == ShopCart) {
-        // console.log(event.target);
-        // console.log(modal2);
         $("#shopCartBox").fadeOut("slow");
-        // ShopCart.style.display = "none"; 跟 fadeOut 相同意思概念 都是display block&none
         console.log(999)
         
     }

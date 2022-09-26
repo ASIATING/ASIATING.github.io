@@ -53,7 +53,7 @@ $(document).ready(function () {
 
   }
   for(i=0;i<Infos.length;i++){
-    // console.log(Infos[i].area)
+    console.log(Infos[i].area)
         changeInfos()      
     }
   $("#area2").change(function () {

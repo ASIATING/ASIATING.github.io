@@ -60,6 +60,7 @@
                             商品介紹
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./sushiInfo.html">各式商品</a></li>
                             <li><a class="dropdown-item" href="./login.html">登入購買</a></li>
                             <li><a class="dropdown-item" onclick="login()" href="#">登入購買Ver2</a></li>
                             <li>
@@ -68,6 +69,9 @@
                             <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./feedBack.html">聯絡我們</a>
+                      </li>
                     <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li> -->
@@ -103,7 +107,10 @@
     <div id="shopCartBox" class="shopCartBox">
         <form class="cart-content animateCart" action="">
             <!-- <i class="fa fa-cart-plus" aria-hidden="true" style="font-size: 20px;">前往結帳</i> -->
-            <div id="closeCart">關閉購物車</div>
+            <div class="CartTitle">
+            <div id="closeCart">ESC關閉</div>
+        </div>
+        
             <div class="row">
                 <div class="col-3">
                     您的壽司
@@ -125,6 +132,7 @@
                 </div>
             </div>
             <hr>
+            <div id="addCart">
             <div class="row ">
                 <div class="col-3">
                     <img src="./img/sushi01.png" alt="" style="text-align: center;">
@@ -132,14 +140,11 @@
                 <div class="col-2 butItem">
                     鮪魚壽司
                 </div>
-                <div class="col-2 butItem">40元
-                </div>
+                <div class="col-2 butItem">40元</div>
                 <div class="col-2 butItem">
                     <input id="buyNum1" type="number" value="1" min="1" width="30px">
                 </div>
-                <div class="col-2 butItem" id="sumPrice1">
-                    40元
-                </div>
+                <div class="col-2 butItem" id="sumPrice1">40元</div>
                 <div class="col-1 delBtn">
                     X
                 </div>
@@ -153,18 +158,17 @@
                 <div class="col-2 butItem">
                     炙燒鮭魚壽司
                 </div>
-                <div class="col-2 butItem">50元
-                </div>
+                <div class="col-2 butItem">50元</div>
                 <div class="col-2 butItem">
                     <input id="buyNum2" type="number" value="1" min="1" width="30px">
                 </div>
-                <div class="col-2 butItem" id="sumPrice2">50元
-                </div>
+                <div class="col-2 butItem" id="sumPrice2">50元</div>
                 <div class="col-1 delBtn">
                     X
                 </div>
                 <hr>
             </div>
+        </div>
             <!-- <div>總價:90元</div> -->
 <div id="totalPrice">總價:90元  </div>
 <div class="checkout" id="checkout">前往結帳</div>
@@ -225,14 +229,14 @@
     <div class="container">
         <h1>商品選擇</h1>
         <div class="shopCart" onclick="showCart()"><i class="fa fa-cart-plus" aria-hidden="true"
-                style="font-size: 50px;"></i><span class="countCart">2</span>購物車清單</div>
+                style="font-size: 30px;"></i><span class="countCart">2</span></div>
         <div class="typeList">
             <div class="item">
                 <div>
                     <img src="./img/sushi.svg" alt="">
                 </div>
 
-                <div class="itemType" id="sushi">壽司</div>
+                <div class="itemType" id="sushi" style="background-color:#a70719 ;">壽司</div>
             </div>
             <div class="item">
                 <div>
@@ -265,7 +269,8 @@
                     <div class="imgBox" style=" background-image: url(./img/sushi01.png);"></div>
                     <h5>鮪魚壽司</h5>
                     <h3>40元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
             </div>
             <div class=" sushiInfo  col-lg-3 col-md-6 ">
@@ -273,7 +278,8 @@
                     <div class="imgBox" style=" background-image: url(./img/sushi02.png);"></div>
                     <h5>醃製鮪魚壽司</h5>
                     <h3>40元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
             </div>
             <div class=" sushiInfo col-lg-3 col-md-6 ">
@@ -281,7 +287,8 @@
                     <div class="imgBox" style=" background-image: url(./img/sushi03.png);"></div>
                     <h5>鮭魚壽司</h5>
                     <h3>40元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
             </div>
             <div class=" sushiInfo col-lg-3 col-md-6 ">
@@ -289,7 +296,8 @@
                     <div class="imgBox" style=" background-image: url(./img/sushi04.png);"></div>
                     <h5>炙燒鮭魚肚壽司</h5>
                     <h3>50元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
             </div>
             <div class="sushiInfo col-lg-3 col-md-6  ">
@@ -297,7 +305,8 @@
                     <div class="imgBox" style=" background-image: url(./img/sushi05.png);"></div>
                     <h5>極上鮪魚大腹</h5>
                     <h3>40元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
 
             </div>
@@ -306,7 +315,8 @@
                     <div class="imgBox" style=" background-image: url(./img/sushi06.png);"></div>
                     <h5>赤鯥</h5>
                     <h3>40元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
             </div>
             <div class=" sushiInfo col-lg-3 col-md-6 ">
@@ -314,15 +324,17 @@
                     <div class="imgBox" style=" background-image: url(./img/sushi07.png);"></div>
                     <h5>鹽醋漬鯖魚</h5>
                     <h3>40元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
             </div>
             <div class=" sushiInfo col-lg-3 col-md-6 ">
                 <div class="innerBox">
                     <div class="imgBox" style=" background-image: url(./img/sushi08.png);"></div>
-                    <h5>炙燒鮭魚肚壽司</h5>
+                    <h5>炙燒鰻魚肚壽司</h5>
                     <h3>50元</h3>
-                    <button class="buyBtn">點我加入購物車</button>
+                    <!-- <button class="buyBtn">購買</button> -->
+                    <div class="buyBtn">購買</div>
                 </div>
             </div>
         </div>

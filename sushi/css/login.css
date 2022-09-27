@@ -1,0 +1,12 @@
+.loginBox{
+    width: 80% ;
+    height: 50vh;
+    margin: 0px auto;
+}
+
+.logPic{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+
+}

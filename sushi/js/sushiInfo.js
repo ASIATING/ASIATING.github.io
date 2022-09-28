@@ -42,7 +42,7 @@ $(document).ready(function () {
   let page = 1;
   let totalPrice = 90;
   const arrPrice = [40, 50];
-  let CartArr = ["鮪魚壽司", "炙燒鮭魚壽司"];
+  let CartArr = ["鮪魚壽司", "炙燒鰻魚肚壽司"];
   console.log(CartArr.indexOf("鮪魚壽司"));
   //  購買按紐開啟購物車
   $(document).on("click", ".buyBtn", function () {
@@ -117,6 +117,7 @@ $(document).ready(function () {
   //   console.log($("#addCart")[0])
   // }
   function totalPay() {
+    console.log( CartArr)
     let NewPrice = 0;
     let cartNum = 0;
     let itemCount = null;
@@ -180,6 +181,7 @@ $(document).ready(function () {
     CartArr = CartArr.filter(function (item) {
       return item != removeName;
     });
+    console.log( CartArr)
     totalPay();
   });
   // 嘗試用ESC方式 關閉右邊購物車

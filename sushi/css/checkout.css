@@ -1,0 +1,111 @@
+*{
+    transition: 1s;
+    box-sizing: border-box;
+}
+.checkoutBox {
+  /* width: 50%; */
+  min-height: 80vh;
+  padding: 30px;
+  border: solid 2px black;
+  margin: 20px auto;
+}
+.leftBox{
+    border-bottom:  1px solid #e1e1e1;
+}
+.payBlock{
+    border: 1px solid black;
+}
+/* .row h3{
+    border-bottom: 1px solid #e1e1e1;
+} */
+
+.CheckTop{
+    border-bottom: 1px solid #e1e1e1;
+}
+.GoshopBtn{
+    cursor: pointer;
+    display: flex;
+padding:0px 5px;
+justify-content: center;
+align-items: center;
+color: #fff;
+background-color: #222222;
+margin: 5px 0px;
+
+}
+.formBox input{
+width: 50%;
+padding: 0px;
+}
+.moreInfo {
+
+    animation: animateCart 0.6s
+  }
+  @keyframes animateCart {
+    0% {
+		transform: translateY(20px);
+        opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+        opacity: 1;
+	}
+  }
+.GoshopBtn a{
+    color: #fff;
+}
+.butItem, .delBtn{
+    display: flex;
+    align-items: center;
+}
+.checkoutBox img {
+  width: 90%;
+}
+.totalPrice{
+    display: flex;
+    justify-content: flex-end
+}
+
+.containBox{
+    display: flex;
+}
+.leftBox{
+    width: 50%;
+    padding: 20px;
+}
+.RightBox{
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+}
+.photo1{
+    width: 60px;
+}
+.photo1 img{
+    width: 100%;
+}
+.visaText{
+    display: flex;
+    align-items: center;
+}
+.formBox .submitBtn{
+    background-color: black;
+    color: #fff;
+    width: 30%;
+}
+@media screen and (max-width: 992px) {
+    .checkoutBox {
+      width: 100%;
+    }
+    .containBox{
+        display: block;
+    }
+    .leftBox{
+        width: 100%;
+    }
+    .RightBox{
+        width: 100%;
+
+    }
+  }

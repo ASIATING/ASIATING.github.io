@@ -59,10 +59,13 @@
     width:100px ;   
     padding: 10px 15px;
     margin: 0px auto;
-    background-color: #28a745;
+    background-color: #222222;
     color: #ffffff;
     border-radius: 15px;
     cursor: pointer;
+}
+.checkout a{
+    color: #fff;
 }
 .CartTitle{
     display: flex;

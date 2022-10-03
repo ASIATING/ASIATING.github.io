@@ -2,6 +2,14 @@
 // import {firstName,lastName} from './storeInfos';
 
 $(document).ready(function () {
+  // if (localStorage.getItem("cart")) {
+  //   cart = JSON.parse(localStorage.getItem("cart"));
+  // }
+  console.log( localStorage.getItem("cart"))
+  cart = JSON.parse(localStorage.getItem("cart"));
+  console.log(cart)
+  // cart = JSON.parse(localStorage.getItem("cart"));
+  // console.log(cart)
 
     let opt2 = null;
     console.log(Infos)

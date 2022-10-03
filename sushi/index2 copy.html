@@ -10,9 +10,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
-    <script src="./jquery.js"></script>
-    <script src="./js/index.js"> </script>
-    
+  <script src="./jquery.js"></script>
+  <script src="./js/index.js"> </script>
+
   <link rel="stylesheet" href="./css/index1.css">
   <link rel="stylesheet" href="./css/index2.css">
   <title>SUSHI</title>
@@ -20,14 +20,14 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid bg-dark">
+    <div class="container container-fluid bg-dark">
       <a class="navbar-brand fw-bold" href="./index1.html">超神田壽司</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index1.html">Home</a>
           </li>
@@ -41,7 +41,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="./index2 copy.html">品牌理念</a></li>
-              <li><a class="dropdown-item"  href="./moresStore.html">全台店鋪一覽</a></li>
+              <li><a class="dropdown-item" href="./moresStore.html">全台店鋪一覽</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -78,16 +78,17 @@
     </div>
   </nav>
   <div id="id01" class="modal">
-    <form  class="modal-content animate" action="">
+    <form class="modal-content animate" action="">
       <div class="container loginCard">
         <label for="username"><b>使用者名稱</b></label><br>
         <input type="text" placeholder="輸入使用者名稱" name="username" required> <br>
         <label for="userpsw"><b>使用者密碼</b></label><br>
         <input type="text" placeholder="輸入使用者密碼" name="userosw" required><br>
         <div class="buttomBox">
-        <button type="submit">Login</button>
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> <br>
-      </div>
+          <button type="submit">Login</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button> <br>
+        </div>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
@@ -142,60 +143,75 @@
     </button>
   </div>
   <!-- 內文 -->
-  <div class="row mt-3">
-    <div class="col-md-6">
-      <div class="text-center">
-        <h1>店鋪介紹</h1>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li>Tenetur sit molestiae quo facilis aliquam, autem est inventore quia rem eos?</li>
-          <li>Tenetur sit molestiae quo facilis aliquam, autem est inventore quia rem eos?</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="text-center">
+          <h1>點餐說明</h1>
+          <p>用餐時間為60分鐘。</p>
+          <p>請依照顏色將盤子疊放一起，並置於桌邊(外側)以利結帳。</p>
+          <p>請勿將身體依靠在壽司鏈上，或放回已取下的餐點。</p>
+          <p>價格:紅色盤40元，銀色盤60元，金色盤80元，黑色盤100元</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-cover mt-5 m-3" style="background-image:url(img/rest1.jpeg);height: 300px;"></div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="bg-cover mt-5 m-3" style="background-image:url(img/rest1.jpeg);height: 300px;"></div>
-    </div>
-  </div>
-  <div class="row mt-3 flex-row-reverse">
-    <div class="col-md-6">
-      <div class="text-center">
-        <h1>品牌理念</h1>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li>Tenetur sit molestiae quo facilis aliquam, autem est inventore quia rem eos?</li>
-          <li>Tenetur sit molestiae quo facilis aliquam, autem est inventore quia rem eos?</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
+    <div class="row mt-3 flex-row-reverse">
+      <div class="col-md-6">
+        <div class="text-center">
+          <h1>品牌理念</h1>
+          <p>自創業初期以來，即秉持提供給消費者安全 、健康、無負擔的美食享受為原則，堅持以「食物的原貌」、「不使用合成食材」、「每盤均一價」的平價定位來提供。</p>
+          <p>花費多年時間研發而成的「鮮度君」獨家專利保鮮蓋能有效杜絕空氣中的飛沫，並透過IC晶片控管，更能確切掌握每盤壽司的鮮度，只要超過時間系統會自動通知，確保消費者食的安心。</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-cover mt-5 m-3" style="background-image:url(img/rest2.jpeg);height: 300px;"></div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="bg-cover mt-5 m-3" style="background-image:url(img/rest2.jpeg);height: 300px;"></div>
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col-md-6">
-      <div class="text-center">
-        <h1>活動簡介</h1>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li>Tenetur sit molestiae quo facilis aliquam, autem est inventore quia rem eos?</li>
-          <li>Tenetur sit molestiae quo facilis aliquam, autem est inventore quia rem eos?</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="text-center">
+          <h1>活動簡介</h1>
+          <p>【海味收穫祭預告】9/30~10/6 有貝而來
+            「香味石澤燒霜鮪魚」與「贅澤鮮蝦海鮮塔 」全新登場
+
+            標記@最愛海味大餐的朋友來藏壽司報到 <a href="https://reurl.cc/pM2Ge8">https://reurl.cc/pM2Ge8</a>
+          <p> New! #贅澤鮮蝦海鮮塔 $80
+            蔥花鮪魚泥搭上甜嫩鮮蝦，再加上晶瑩剔透的鮭魚卵點綴，視覺味覺，一次滿足~</p>
+          <p>New! #香味石澤燒霜鮪魚 $80
+            特製的香味野菜，搭配燒霜後的鮪魚，創造出了令人驚豔的美味</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="bg-cover mt-5 m-3" style="background-image:url(img/rest3.jpeg);height: 300px;"></div>
+      <div class="col-md-6">
+        <div class="bg-cover mt-5 m-3" style="background-image:url(img/rest3.jpeg);height: 300px;"></div>
+      </div>
     </div>
   </div>
 
 
   <div class="footer">
-    <div class="footerBox">
-      <p class="footer-copy">Copyright©2022 丁鵬仁ERIC 版權所有</p>
+    <div class=" row footerBox">
+      <div class="col-md-8 fanBtn">
+        <div class="facebook">Facebook</div>
+        <div class="twitter">Twitter</div>
+        <div class="line">Line</div>
+        <div class="instagram">Instagram</div>
+      </div>
+      <div class="col-md-4 footer-copy">
+      <p>Copyright©2022 丁鵬仁ERIC 版權所有</p>
+      <p>產業新尖兵作品成果展示，無任何商業用途</p>
+    </p>
+
+  </div>
+  <div class="footInfos">
+  <p>Tel:<a href="tel:+886-2-24884712">02-24884712</a></p>
+  <p>Add： 桃園市桃園區中正路xxxxx</p>
+<p > Email： <a  href="mailto:h124702780@gmail.com?subject=Testing"> h124702780@gmail.com</a></p>
+</div>
     </div>
+  </div>
 
 </body>
 

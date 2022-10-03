@@ -206,6 +206,7 @@ img {
   transform: scale(1.2);
 }
 .changeIngDiv {
+  margin-top: 20px;
   position: relative;
 }
 /* .changeIngDiv img {
@@ -252,13 +253,14 @@ margin-bottom: 20px;
 
 .footer {
   /* height: 10vh; */
-  background-color: #8c7b73;
-  padding: 20px 20%;
+  background-color: #a70719;
+  padding: 20px 10%;
 }
 .footerBox {
+  display: flex;
   align-items: center;
   margin: 10px;
-  color: #d8d297;
+  color: white;
   font-size: 20px;
   font-weight: bold;
 }
@@ -267,6 +269,50 @@ margin-bottom: 20px;
 }
 .footer-copy {
   text-align: center;
-  opacity: 0.5;
+  /* opacity: 0.5; */
  font-size: 16px;
+}
+.footInfos{
+  display: flex;
+  justify-content: center;
+}
+.footInfos p{
+  font-size: 14px;
+  margin-left: 50px;
+}
+.fanBtn{
+  display: flex;
+  margin-bottom: 20px;
+
+}
+.facebook ,.twitter,.instagram,.line{
+  cursor: pointer;
+font-size: 14px;
+text-align: center;
+font-weight: bold;
+border-radius: 5px;
+padding: 10px 10px;
+margin-right: 10px;
+width: 150px;
+color: white;
+background-color: black;
+}
+.facebook {
+  background-color: #2e4a88;
+  box-shadow: 0 4px 0 #1b3d82;
+}
+.twitter{
+  background-color: #008DDE;
+  box-shadow: 0 4px 0 #0078bd;
+}
+.instagram{
+  background-color: #D93177;
+  box-shadow: 0 4px 0 #d90d59;
+}
+.line{
+  background-color: #00B900;
+  box-shadow: 0 4px 0 #00a014;
+}
+a{
+  text-decoration: none;
 }

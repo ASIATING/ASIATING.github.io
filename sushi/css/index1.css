@@ -280,6 +280,9 @@ margin-bottom: 20px;
   font-size: 14px;
   margin-left: 50px;
 }
+.footInfos a{
+  color: white;
+}
 .fanBtn{
   display: flex;
   margin-bottom: 20px;
